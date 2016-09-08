@@ -1,6 +1,7 @@
+""" Print a list of squares using various loops"""
 n = 12
 
-# Create a list of squares of integers < n
+# using a for loop and list method append()
 squares = []
 for i in range(n):
     squares.append(i**2)
