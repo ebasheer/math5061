@@ -1,3 +1,5 @@
+"""Print fibonacci numbers less that input value"""
+
 n = input('enter number:')
 n = int(n)
 
