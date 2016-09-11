@@ -16,7 +16,7 @@ hist = {}
 for char in instr.lower():
     if char.isalpha():
         if char not in hist:
-            hist[char] = 0
+            hist[char] = 1
         else:
             hist[char] += 1
 
