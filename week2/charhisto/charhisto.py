@@ -12,5 +12,11 @@ instr = "Twas the night before start-up and all through the net "\
         "I sprang from my desk to see what was the matter"
 
 
+hist = {}
 for char in instr:
-    print(char)
+    if char not in hist:
+        hist[char] = 0
+    else:
+        hist[char] += 1
+
+print(hist)
