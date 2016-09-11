@@ -20,4 +20,5 @@ for char in instr.lower():
         else:
             hist[char] += 1
 
-print(hist)
+for char, num in hist.items():
+    print(char,': ', '+'*num)
