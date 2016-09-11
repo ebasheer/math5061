@@ -13,7 +13,7 @@ instr = "Twas the night before start-up and all through the net "\
 
 
 hist = {}
-for char in instr:
+for char in instr.lower():
     if char not in hist:
         hist[char] = 0
     else:
