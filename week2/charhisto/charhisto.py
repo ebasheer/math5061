@@ -11,4 +11,6 @@ instr = "Twas the night before start-up and all through the net "\
         "When out in the hall there arose such a clatter, "\
         "I sprang from my desk to see what was the matter"
 
-print(instr)
+
+for char in instr:
+    print(char)
