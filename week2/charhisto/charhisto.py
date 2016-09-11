@@ -22,3 +22,19 @@ for char in instr.lower():
 
 for char, num in hist.items():
     print(char,': ', '+'*num)
+    
+mystr = "prepared for some pretty bad bruises and lumps. "\
+        "When out in the hall there arose such a clatter, "\
+        "I sprang from my desk to see what was the matter"
+
+
+hist = {}
+for char in instr.lower():
+    if char.isalpha():
+        if char not in hist:
+            hist[char] = 1
+        else:
+            hist[char] += 1
+
+for char, num in hist.items():
+    print(char,': ', '+'*num)
