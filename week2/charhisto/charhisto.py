@@ -29,7 +29,7 @@ mystr = "prepared for some pretty bad bruises and lumps. "\
 
 
 hist = {}
-for char in instr.lower():
+for char in mystr.lower():
     if char.isalpha():
         if char not in hist:
             hist[char] = 1
