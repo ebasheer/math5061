@@ -6,3 +6,5 @@ while True:
         print('a/b is: ',q)
     except ZeroDivisionError:
         print("Can't divide by zero. Try again")
+    except ValueError:
+        print("invalid input")
