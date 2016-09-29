@@ -4,7 +4,7 @@ class Engine:
         if self.tech == 'gas':
             self._rpm = 500
         elif self.tech == 'electric':
-            self.rpm = 0
+            self._rpm = 0
 
     def inc_speed(self):
         if self.tech == 'gas':

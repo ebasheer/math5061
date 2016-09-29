@@ -2,15 +2,16 @@ from vehicle import Vehicle
 from engine import Engine
 
 class Car(Vehicle):
-    def __init__(self, manuf, top_speed, ndoors):
+    def __init__(self, manuf, top_speed, ndoors, etype='gas'):
         super().__init__(max_pass=5, wheels=4)
         self.manuf = manuf
         self.top_speed = top_speed
         self.ndoors = ndoors 
-        self.engine = Engine('gas')
+        self.engine = Engine(etype)
 
     def speedup(self):
         print('speedup by 1 mph. Depress gas pedal')
+        self.engine.inc_speed()
         if self._curspeed < self.top_speed:
             self._curspeed += 1
         else:

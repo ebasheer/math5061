@@ -9,7 +9,7 @@ def drive(v):
     v.printspeed()
 
 
-my_car = car.Car('bugatti', 250, 2)
+my_car = car.Car('bugatti', 250, 2, 'electric')
 my_bike = mc.Motorcycle('Honda', 120)
 my_spcar = car.SportsCar('Honda', 180)
 
